@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <center>
+        <head>
+            <title>
+                Portfolio
+            </title>
+            <style>
+            body {
+                background-image: url("coder.gif");
+                background-color:grey;
+            } 
+</style>
+        </head>
+        <body>
+        <h1> Vasisth Roy </h1>
+        <h2> Programmer </h2>
+        <p>
+            <a href="https://www.linkedin.com/feed/">Visit my LinkedIn</a>
+        </p>
+        <center>
+            <img src="coding.png" alt="Programmer" width="125" height="125">
+        </center>
+
+        <?php
+        $expertise="cloud";
+
+        switch ($expertise)
+        {
+            case "database":
+                echo "<p> <font color=blue>My Expertise is in Database.</font></p>";
+                break;
+                case "cloud":
+                    echo "<p> <font color=blue>My Expertise is in Cloud.</font></p>";
+                    break;
+                    case "linux":
+                        echo "<p> <font color=blue>My Expertise is in Linux.</font></p>";
+                        break;
+                        case "networking":
+                            echo "<p> <font color=blue>My Expertise is in Netwroking.</font></p>";
+                            break;
+                            default:
+                            echo "My Expertise is in neither Databse,Linux nor Netwroking";
+        }
+        ?>
+        </body>
+    </center>
+    </html>
